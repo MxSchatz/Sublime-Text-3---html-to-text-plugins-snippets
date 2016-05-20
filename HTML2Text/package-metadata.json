@@ -1,0 +1,1 @@
+{"platforms": ["*"], "url": "https://github.com/jaredmoody/sublime_html_to_text", "version": "2014.10.26.07.56.07", "dependencies": [], "description": "Converts files, selection and clipboard content from HTML to Text/Valid markdown using html2text", "sublime_text": ">=3000"}
