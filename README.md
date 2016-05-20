@@ -11,6 +11,10 @@ Installation:
 
 /Users/yourusername/Library/Application Support/Sublime Text 3/Packages/User/
 
+-replace the HTML2Text packages folder located here:
+
+/Users/yourusername/Library/Application Support/Sublime Text 3/Packages/HTML2Text
+
 -Restart Sublime Text 3
 
 
