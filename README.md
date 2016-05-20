@@ -8,9 +8,16 @@ and user snippets for the MullenLowe workflow.
 Installation:
 
 -Place the files in here:
+
 /Users/yourusername/Library/Application Support/Sublime Text 3/Packages/User/
+
 -Restart Sublime Text 3
 
+
 Snippets:
+
 ["dr" + tab] = adds a row of dashes
+
 ["nopaper" + tab] = adds the no paper message
+
+["cr" + tab] = copyright symbol
