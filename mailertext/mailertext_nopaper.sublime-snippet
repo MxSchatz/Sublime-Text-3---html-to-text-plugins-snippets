@@ -1,0 +1,6 @@
+<snippet>
+	<content><![CDATA[Please consider the environment before printing this email.]]></content>
+	<tabTrigger>nopaper</tabTrigger>
+	<scope>text.plain</scope>
+	<description>don't print ending text</description>
+</snippet>
