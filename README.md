@@ -25,3 +25,7 @@ Snippets:
 ["nopaper" + tab] = adds the no paper message
 
 ["cr" + tab] = copyright symbol
+
+["ibira" + tab] = add strapline
+
+["webv" + tab] = adds "View this e-mail on the web:"
