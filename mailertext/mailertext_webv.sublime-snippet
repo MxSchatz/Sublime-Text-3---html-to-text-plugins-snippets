@@ -1,0 +1,6 @@
+<snippet>
+	<content><![CDATA[View this e-mail on the web:]]></content>
+	<tabTrigger>webv</tabTrigger>
+	<scope>text.plain</scope>
+	<description>quick repetetive fix</description>
+</snippet>
