@@ -45,7 +45,7 @@ ESCAPE_SNOB = 0
 LINKS_EACH_PARAGRAPH = 0
 
 # Wrap long lines at position. 0 for no wrapping. (Requires Python 2.3.)
-BODY_WIDTH = 78
+BODY_WIDTH = 72
 
 # Don't show internal links (href="#local-anchor") -- corresponding link targets
 # won't be visible in the plain text file anyway.
@@ -58,7 +58,7 @@ INLINE_LINKS = True
 GOOGLE_LIST_INDENT = 36
 
 IGNORE_ANCHORS = False
-IGNORE_IMAGES = True
+IGNORE_IMAGES = False
 IGNORE_EMPHASIS = True
 
 ### Entity Nonsense ###
@@ -497,10 +497,10 @@ class HTML2Text(HTMLParser.HTMLParser):
             if has_key(attrs, 'src'):
                 attrs['href'] = attrs['src']
                 alt = attrs.get('alt', '')
-                self.o(" \n" + escape_md(alt) + " \n")
+                self.o(escape_md(alt))
 
                 if self.inline_links:
-                    self.o("(" + escape_md(attrs['href']) + ")")
+                    self.o(" ")
                 else:
                     i = self.previousIndex(attrs)
                     if i is not None:
@@ -510,7 +510,7 @@ class HTML2Text(HTMLParser.HTMLParser):
                         attrs['count'] = self.acount
                         attrs['outcount'] = self.outcount
                         self.a.append(attrs)
-                    self.o(" \n" + str(attrs['count']) + " \n")
+                    self.o("[" + str(attrs['count']) + "]")
 
         if tag == 'dl' and start: self.p()
         if tag == 'dt' and not start: self.pbr()
